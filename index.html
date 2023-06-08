@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" id="form" name="form">
+            <div class="form-group">
+                <input type="text" title="Name" autocomplete="on" placeholder="Name" id="name">
+            </div>
+            <div class="form-group">
+                <input type="email" title="Email" autocomplete="on" placeholder="Email" id="email">
+            </div>
+            <div class="form-group">
+                <input type="password" title="Password" placeholder="Password (It contains atleast 8 characters)" id="pswd">
+            </div>
+            <div class="form-group">
+                <textarea cols="" rows="3" id="textarea" placeholder="Your Queries"></textarea>
+            </div>
+            <div class="captcha-box">
+                <input type="text" class="captcha" id="captcha" readonly>
+                <button id="refresh" onclick="generateCaptcha()" title="Refresh">&#9851;</button>
+            </div>
+            <div class="form-group">
+                <input type="text" title="Enter captcha here" id="captchaInput" placeholder="Enter Captcha Here">
+            </div>
+            <input type="submit" value="Submit" onclick="checkValidation()" id="submit">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
